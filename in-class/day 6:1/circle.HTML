@@ -1,0 +1,32 @@
+<!DOCTYPE>
+
+<HTML>
+<head>
+<title> circle</title>
+
+</head>
+
+<body>
+
+<p id="circle"></p>
+
+<script>
+
+    var radius = prompt("Please enter the radius", "");
+    
+    if (radius != null) {
+        document.getElementById("circle").innerHTML =
+        "The diameter is: " + 2*radius + 
+		" the radius: " + radius +
+		" the area: " + radius * radius * 3.14 +
+		" and the circumference: " + 2*radius * 3.14 + ".";
+    }
+
+</script>
+
+
+
+</body>
+
+
+</html>
