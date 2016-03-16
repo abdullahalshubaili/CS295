@@ -1,0 +1,29 @@
+
+<!DOCTYPE> 
+<html><!-- xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+--><head>
+	<meta http-equiv="Content-Type" content ="text/html; charset=utf-8"/>
+	<title> Customize your setting</title>
+	<style type="text/css">
+<?php 
+if(isset($_COOKIE['font_size'])) {
+	print "\t\tfont-size: " .htmlentities($_COOKIE['font_size']) . ";\n";
+	} else{
+	print "\t\tfont-size: medium: ";
+	}
+	
+	//check for font_color value
+if(isset($_COOKIE['font_color'])){
+	print "\t\color: #" .htmlentities($_COOKIE['font_color']) . ";\n";
+	} else{
+	print "\t\color: #000: ";
+	}
+	?>
+	</style>
+</head>
+<body>
+<p><a href="new.php">custimeze your setting</a> </p>
+<p><a href="cookiereset.php">reset your setting</a> </p>
+<P> trytrytrytrytrytrytrytry </p>
+</body>
+</html>
